@@ -2,23 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Homework 11</title>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <p><a href="index.html">Back</a></p>
+    <div class="container" id="container">
+      <form id="formSearching">
+        <label for="inputSearch"></label>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+        <input type="text" id="inputSearch" placeholder="Search images..." />
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+        <button type="submit" class="btn">Start</button>
+      </form>
 
-    <script type="module" src="./main.js"></script>
+      <div id="gallery" class="gallery"></div>
+      <!-- <button type="button" id="load-more">Load more</button> -->
+
+      <div class="container-loader" id="container-loader">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
